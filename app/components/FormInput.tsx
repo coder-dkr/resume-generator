@@ -31,7 +31,7 @@ const FormInput: React.FC<FormInputProps> = ({ label,placeholder, error, require
 
   return (
     <div className="mb-4">
-      <label htmlFor={props.name} className="block text-sm font-medium text-gray-700">
+      <label htmlFor={props.name} className="block text-sm font-semibold text-gray-700">
         {label} {required && <span className="text-red-500">*</span>}
       </label>
       <div className="relative">
