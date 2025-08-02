@@ -6,19 +6,11 @@ import PdfPreview from "@/app/components/PdfPreview";
 import { useFormContext } from "../context/FormContext";
 import Button from "../components/Button";
 import Image from "next/image";
-import { useEffect } from "react";
+
 
 export default function PreviewPage() {
   const router = useRouter();
   const { formData } = useFormContext();
-
-  useEffect(() => {
-    console.log(formData)
-    if(!formData.name) {
-        router.push("/form");
-      }
-  },[])
-
  
 
   const handleBack = () => {
