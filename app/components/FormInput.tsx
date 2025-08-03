@@ -15,15 +15,15 @@ const FormInput: React.FC<FormInputProps> = ({ label,placeholder, error, require
       case 'name':
         return <Image width={24} height={24} alt="user" src="/svgs/user.svg" />;
       case 'email':
-        return <Image width={24} height={24} alt="user" src="/svgs/mail.svg" />;
+        return <Image width={24} height={24} alt="email" src="/svgs/mail.svg" />;
       case 'phone':
-        return <Image width={24} height={24} alt="user" src="/svgs/phone-call.svg" />;
+        return <Image width={24} height={24} alt="phone" src="/svgs/phone-call.svg" />;
       case 'position':
-        return <Image width={24} height={24} alt="user" src="/svgs/position.svg" />;
+        return <Image width={24} height={24} alt="position" src="/svgs/position.svg" />;
       case 'description':
-        return <Image width={24} height={24} alt="user" src="/svgs/description.svg" />;
+        return <Image width={24} height={24} alt="desc" src="/svgs/description.svg" />;
       case 'fileName':
-        return <Image width={24} height={24} alt="user" src="/svgs/description.svg" />;
+        return <Image width={24} height={24} alt="filename" src="/svgs/description.svg" />;
       default:
         return null;
     }

@@ -1,9 +1,8 @@
-"use client";
-// import { useState } from 'react';
+"use client"
+
 import { useRouter } from "next/navigation";
 import { motion } from "framer-motion";
 import FormInput from "@/app/components/FormInput";
-// import { validateEmail, validatePhone } from '@/app/utils/validation';
 import { useFormContext } from "../context/FormContext";
 import Button from "../components/Button";
 import Image from "next/image";

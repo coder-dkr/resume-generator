@@ -1,6 +1,7 @@
 'use client';
 
 import { createContext, useContext, useState } from 'react';
+import { validateEmail , validatePhone } from '@/app/utils/validation';
 
 interface FormData {
   name: string;
@@ -91,12 +92,3 @@ export function useFormContext() {
 }
 
 // Helper functions
-function validateEmail(email: string): boolean {
-  const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-  return re.test(email);
-}
-
-function validatePhone(phone: string): boolean {
-  const digits = phone.replace(/\D/g, '');
-  return digits.length >= 10;
-}
